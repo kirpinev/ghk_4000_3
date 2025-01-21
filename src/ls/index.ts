@@ -1,9 +1,15 @@
 export const enum LSKeys {
   ShowThx = "ab_show_thx_ghk_4000_3",
+  ShowProcessing = "ab_show_processing_ghk_4000_3",
+  ShowThanks = "ab_show_thanks_ghk_4000_3",
+  ClickThanks = "ab_click_thanks_ghk_4000_3",
 }
 
 export interface LSData {
   [LSKeys.ShowThx]: boolean | null;
+  [LSKeys.ShowProcessing]: boolean | null;
+  [LSKeys.ShowThanks]: boolean | null;
+  [LSKeys.ClickThanks]: boolean | null;
 }
 
 const getItem = <K extends LSKeys>(
